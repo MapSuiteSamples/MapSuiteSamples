@@ -1,0 +1,45 @@
+﻿<Application x:Class="ThinkGeo.MapSuite.Overlays.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <Thickness x:Key="SeparatorMargin" Left="-6" Top="0" Right="-6" Bottom="0" />
+                    <Style x:Key="ControlFont" TargetType="TextBlock">
+                        <Setter Property="FontFamily" Value="Segoe UI" />
+                        <Setter Property="FontSize" Value="18" />
+                        <Setter Property="Foreground" Value="#000000" />
+                        <Setter Property="HorizontalAlignment" Value="Left" />
+                    </Style>
+
+                    <Style x:Key="NormalButtonStyle" TargetType="Button">
+                        <Setter Property="Width" Value="70" />
+                        <Setter Property="Margin" Value="10 10 0 0" />
+                    </Style>
+                    <Style x:Key="ExplainText" TargetType="{x:Type TextBlock}">
+                        <Setter Property="FontSize" Value="9.5" />
+                        <Setter Property="FontWeight" Value="Regular" />
+                    </Style>
+                    <Style x:Key="h4"
+           BasedOn="{StaticResource ControlFont}"
+           TargetType="{x:Type TextBlock}">
+                        <Setter Property="FontSize" Value="15" />
+                        <Setter Property="FontWeight" Value="Regular" />
+                    </Style>
+                    <Style x:Key="bodyText"
+           BasedOn="{StaticResource ControlFont}"
+           TargetType="{x:Type TextBlock}">
+                        <Setter Property="FontSize" Value="14" />
+                        <Setter Property="FontWeight" Value="Regular" />
+                        <Setter Property="Margin" Value="0 10 5 10" />
+                        <Setter Property="TextAlignment" Value="Left" />
+                        <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+                    </Style>
+                </ResourceDictionary>
+                <ResourceDictionary Source="Themes\Generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

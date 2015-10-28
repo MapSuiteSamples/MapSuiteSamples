@@ -1,0 +1,65 @@
+﻿<Window x:Class="CSHowDoISamples.Samples"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+    xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+    xmlns:uc1="clr-namespace:ThinkGeo.MapSuite.WpfDesktopEdition;assembly=WpfDesktopEdition"
+    Title="C# Sample App" Height="768" Width="1024" FontSize="12" FontFamily="arial" WindowStartupLocation="CenterScreen" Icon="/CSHowDoISamples;component/Resources/MS.ico">
+    <Grid x:Name="LayoutRoot" Loaded="LayoutRoot_Loaded" MinWidth="300">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!--header-->
+        <Grid Grid.Row="0" Grid.ColumnSpan="3" Background="#26688e">
+            <Image Source="Resources/MS50SampleAppsMastheadAdSpace.png" Name="imageBanner" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1024" Height="100" />
+            <Image x:Name="AdRotator" HorizontalAlignment="Right" VerticalAlignment="Center" Source="bannerad_offline.png" Width="468" Height="60" Margin="0 0 20 0"></Image>
+            <WindowsFormsHost x:Name="AdRotatorHost" HorizontalAlignment="Right" VerticalAlignment="Center" Width="468" Height="60" Margin="0 0 20 0" Visibility="Collapsed">
+                <wf:WebBrowser x:Name="AdRotatorBrowser" IsWebBrowserContextMenuEnabled="False" ScrollBarsEnabled="False"></wf:WebBrowser>
+            </WindowsFormsHost>
+        </Grid>
+
+        <!--tree-->
+        <Border Grid.Row="1" Grid.Column="0" BorderThickness="0,0,1,0" BorderBrush="Gray">
+            <TreeView x:Name="SampleTree" FontSize="12" BorderThickness="0" SelectedItemChanged="SampleTree_SelectedItemChanged"></TreeView>
+        </Border>
+
+        <GridSplitter Grid.Row="1" Grid.Column="1" Background="Gray" Width="3" ResizeDirection="Columns" HorizontalAlignment="Stretch">
+        </GridSplitter>
+
+        <!--main content-->
+        <Grid Grid.Row="1" Grid.Column="2" x:Name="ContentGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.Resources>
+                <Style x:Key="Bt" TargetType="Button">
+                    <Setter Property="Margin" Value="2"></Setter>
+                    <Setter Property="Width" Value="70"></Setter>
+                    <Setter Property="FontSize" Value="11"></Setter>
+                    <Setter Property="FontFamily" Value="Arial"></Setter>
+                </Style>
+            </Grid.Resources>
+            <StackPanel Orientation="Horizontal">
+                <Button Style="{StaticResource Bt}" Content="Sample" Click="Button_Click"></Button>
+                <Button Style="{StaticResource Bt}" Content="C# Source" Click="Button_Click"></Button>
+                <Button Style="{StaticResource Bt}" Content="XAML" Click="Button_Click"></Button>
+            </StackPanel>
+            <Grid x:Name="MainContent" Grid.Row="1">
+            </Grid>
+            <WindowsFormsHost x:Name="CSharpHost" Grid.Row="1" Visibility="Collapsed">
+                <wf:WebBrowser x:Name="CSharpBrowser" IsWebBrowserContextMenuEnabled="False" ScrollBarsEnabled="False"></wf:WebBrowser>
+            </WindowsFormsHost>
+            <WindowsFormsHost x:Name="XamlHost" Grid.Row="1" Visibility="Collapsed">
+                <wf:WebBrowser x:Name="XamlBrowser" IsWebBrowserContextMenuEnabled="False" ScrollBarsEnabled="False"></wf:WebBrowser>
+            </WindowsFormsHost>
+        </Grid>
+    </Grid>
+</Window>

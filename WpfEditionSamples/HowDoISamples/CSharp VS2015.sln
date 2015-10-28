@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS HowDoISamples", "CSharp Samples\CS HowDoISamples.csproj", "{09D81718-7305-4152-A6C2-53D80812C924}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Code Analysis|Any CPU = Code Analysis|Any CPU
+		Code Analysis|x86 = Code Analysis|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Evaluation|Any CPU = Evaluation|Any CPU
+		Evaluation|x86 = Evaluation|x86
+		Full|Any CPU = Full|Any CPU
+		Full|x86 = Full|x86
+		GISEditorUnitTest|Any CPU = GISEditorUnitTest|Any CPU
+		GISEditorUnitTest|x86 = GISEditorUnitTest|x86
+		Multithread|Any CPU = Multithread|Any CPU
+		Multithread|x86 = Multithread|x86
+		ReadOnly|Any CPU = ReadOnly|Any CPU
+		ReadOnly|x86 = ReadOnly|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+		TGLICENSE|Any CPU = TGLICENSE|Any CPU
+		TGLICENSE|x86 = TGLICENSE|x86
+		ThreadPoolEx|Any CPU = ThreadPoolEx|Any CPU
+		ThreadPoolEx|x86 = ThreadPoolEx|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09D81718-7305-4152-A6C2-53D80812C924}.Code Analysis|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Code Analysis|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Code Analysis|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Code Analysis|x86.Build.0 = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Debug|x86.ActiveCfg = Debug|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Debug|x86.Build.0 = Debug|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Evaluation|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Evaluation|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Evaluation|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Evaluation|x86.Build.0 = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Full|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Full|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Full|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Full|x86.Build.0 = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.GISEditorUnitTest|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.GISEditorUnitTest|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.GISEditorUnitTest|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.GISEditorUnitTest|x86.Build.0 = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Multithread|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Multithread|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Multithread|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Multithread|x86.Build.0 = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.ReadOnly|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.ReadOnly|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.ReadOnly|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.ReadOnly|x86.Build.0 = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.Release|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.Release|x86.Build.0 = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.TGLICENSE|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.TGLICENSE|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.TGLICENSE|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.TGLICENSE|x86.Build.0 = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.ThreadPoolEx|Any CPU.ActiveCfg = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.ThreadPoolEx|Any CPU.Build.0 = Release|Any CPU
+		{09D81718-7305-4152-A6C2-53D80812C924}.ThreadPoolEx|x86.ActiveCfg = Release|x86
+		{09D81718-7305-4152-A6C2-53D80812C924}.ThreadPoolEx|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

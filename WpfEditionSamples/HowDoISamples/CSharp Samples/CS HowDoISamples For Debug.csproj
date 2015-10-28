@@ -1,0 +1,1184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09D81718-7305-4152-A6C2-53D80812C924}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSHowDoISamples</RootNamespace>
+    <AssemblyName>CSHowDoISamples</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>MS.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FdoExtension, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HowDoISampleDependencies\FdoExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="FleeStyleExtension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HowDoISampleDependencies\FleeStyleExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=1.98.2.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HowDoISampleDependencies\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfExtension, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HowDoISampleDependencies\PdfExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.2.1269.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HowDoISampleDependencies\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PostgreExtension, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HowDoISampleDependencies\PostgreExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.1.4.31904, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HowDoISampleDependencies\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraphStyleExtension, Version=3.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\HowDoISampleDependencies\ZedGraphStyleExtension.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Data Providers\LoadMsSql2008FeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Data Providers\LoadAnOracleFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Data Providers\CreateAnInMemoryFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Data Providers\CreateASpatialIndexForAShapeFileFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Data Providers\LoadAGridFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Data Providers\LoadAHeatLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Data Providers\LoadAMapFromStreams.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dynamic Shapes\EfficientlyMoveAPlaneImage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dynamic Shapes\HighlightAFeatureOnTheMap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dynamic Shapes\RefreshPointsRandomly.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Editing Feature Layers\AddFeaturesFromAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Editing Feature Layers\DeleteFeaturesFromAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Editing Feature Layers\EditFeaturesFromAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Editing Feature Layers\TrackAndEditShapes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\AddAdditionalCustomPropertiesAndMethods.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\DrawUsingZedGraphStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\DrawUsingFleeBooleanStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\LoadAPostgreSqlFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\LoadSdfFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\LoadGeoDatabaseFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\LoadTabFileFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\UseMicrosoftMapsLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Extending MapSuite\UsePdfExtension.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Feature Layers\DisplayFeatureLayerAtCertainScale.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Feature Layers\ChangeTheLookOfAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Feature Layers\StopCertainFeaturesFromDrawing.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\MoveAFeature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dynamic Shapes\ShowTemporaryShapeOnTheMap.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\FindTheDistanceBetweenTwoFeatures.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\FindUnionBetweenFeatures.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\FindDifferenceBetweenTwoFeatures.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\FindShortestLineBetweenTwoFeatures.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\CreateABufferAroundAFeature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\DetermineTheAreaOfAnAreaFeature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\DetermineTheLengthOfALineFeature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\DetermineTheEnvelopeOfAFeature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\ConvertAFeatureToAndFromWkb.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\FindAFeatureFromItsId.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\UseMapSimplification.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Features\ScaleUpAndDownAFeature.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\AddPopups.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\DisplayASimpleMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\FindTheFeatureAUserClickedOn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\HideOrShowAFeatureLayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\LoadAShapeFileFeatureLayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\PanAroundTheMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\PlotALatitudeAndLongitudePointOnTheMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\TileDowloadProgress.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\UsingTileCache.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Getting Started\ZoomInAndOutOfTheMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Labeling\DrawAndLabelANiceLookingRoad.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Labeling\DrawAndLabelPointsOfInterests.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Labeling\ChangeTheLabelPlacementForPoints.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Labeling\DrawAndLabelWaterFeatures.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Labeling\DrawCurvedLabels.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Labeling\ChangeTheLabelPosition.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MapTools\MouseCoordinate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MapTools\ChangeDefaultLogo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MapTools\PanZoomBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Markers\AddSimpleMarkers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Markers\AddLabelOnMarkers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Markers\AddAnInMemoryMarkerOverlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Markers\AddAFeatureSourceMarkerOverlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Markers\DragToCopyAMarker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Markers\UseDraggableMarker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Move Around The Map\CreateARestrictionLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Move Around The Map\CreateAScaleLineAdornmentLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Move Around The Map\CreateAGraticuleAdornmentLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Move Around The Map\ZoomToAFeatureOrFeatures.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Move Around The Map\ZoomToACertainZoomLevel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Move Around The Map\ZoomToACertainScale.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Projection\UseRotationProjectionForAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Projection\UseADifferentProjectionForAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Querying Feature Layers\FindFeaturesWithinDistance.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Querying Feature Layers\FindFeaturesCountInAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Querying Feature Layers\GetAllFeaturesFromAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Querying Feature Layers\GetAColumnDataInAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Querying Feature Layers\FindOutColumnDataInAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Feature Layers\AddMyOwnCustomDataToAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Querying Feature Layers\SpatialQueryAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Querying Feature Layers\SqlQueryAFeatureLayer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SampleTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Samples.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Satellite Image\DisplayASatelliteImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Satellite Image\LoadAnEcwImage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Satellite Image\LoadAMrSidImage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Satellite Image\LoadAWmsImage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen &amp; World Coordinates\DetermineWhereUserClickInWorldCoordinate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen &amp; World Coordinates\ConvertScreenCoordinatesToWorldCoordinates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Screen &amp; World Coordinates\ConvertWorldCoordinatesToScreenCoordinates.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples.xaml.cs">
+      <DependentUpon>Samples.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data Providers\LoadMsSql2008FeatureLayer.xaml.cs">
+      <DependentUpon>LoadMsSql2008FeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data Providers\LoadAnOracleFeatureLayer.xaml.cs">
+      <DependentUpon>LoadAnOracleFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data Providers\CreateAnInMemoryFeatureLayer.xaml.cs">
+      <DependentUpon>CreateAnInMemoryFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data Providers\CreateASpatialIndexForAShapeFileFeatureLayer.xaml.cs">
+      <DependentUpon>CreateASpatialIndexForAShapeFileFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data Providers\LoadAGridFeatureLayer.xaml.cs">
+      <DependentUpon>LoadAGridFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data Providers\LoadAHeatLayer.xaml.cs">
+      <DependentUpon>LoadAHeatLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data Providers\LoadAMapFromStreams.xaml.cs">
+      <DependentUpon>LoadAMapFromStreams.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic Shapes\EfficientlyMoveAPlaneImage.xaml.cs">
+      <DependentUpon>EfficientlyMoveAPlaneImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic Shapes\HighlightAFeatureOnTheMap.xaml.cs">
+      <DependentUpon>HighlightAFeatureOnTheMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic Shapes\RefreshPointsRandomly.xaml.cs">
+      <DependentUpon>RefreshPointsRandomly.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editing Feature Layers\AddFeaturesFromAFeatureLayer.xaml.cs">
+      <DependentUpon>AddFeaturesFromAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editing Feature Layers\DeleteFeaturesFromAFeatureLayer.xaml.cs">
+      <DependentUpon>DeleteFeaturesFromAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editing Feature Layers\EditFeaturesFromAFeatureLayer.xaml.cs">
+      <DependentUpon>EditFeaturesFromAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Editing Feature Layers\TrackAndEditShapes.xaml.cs">
+      <DependentUpon>TrackAndEditShapes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\AddAdditionalCustomPropertiesAndMethods.xaml.cs">
+      <DependentUpon>AddAdditionalCustomPropertiesAndMethods.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\DrawUsingZedGraphStyle.xaml.cs">
+      <DependentUpon>DrawUsingZedGraphStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\DrawUsingFleeBooleanStyle.xaml.cs">
+      <DependentUpon>DrawUsingFleeBooleanStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\LoadAPostgreSqlFeatureLayer.xaml.cs">
+      <DependentUpon>LoadAPostgreSqlFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\LoadSdfFeatureLayer.xaml.cs">
+      <DependentUpon>LoadSdfFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\LoadGeoDatabaseFeatureLayer.xaml.cs">
+      <DependentUpon>LoadGeoDatabaseFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\LoadTabFileFeatureLayer.xaml.cs">
+      <DependentUpon>LoadTabFileFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\UseMicrosoftMapsLayer.xaml.cs">
+      <DependentUpon>UseMicrosoftMapsLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extending MapSuite\UsePdfExtension.xaml.cs">
+      <DependentUpon>UsePdfExtension.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Feature Layers\DisplayFeatureLayerAtCertainScale.xaml.cs">
+      <DependentUpon>DisplayFeatureLayerAtCertainScale.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Feature Layers\ChangeTheLookOfAFeatureLayer.xaml.cs">
+      <DependentUpon>ChangeTheLookOfAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Feature Layers\StopCertainFeaturesFromDrawing.xaml.cs">
+      <DependentUpon>StopCertainFeaturesFromDrawing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\MoveAFeature.xaml.cs">
+      <DependentUpon>MoveAFeature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic Shapes\ShowTemporaryShapeOnTheMap.xaml.cs">
+      <DependentUpon>ShowTemporaryShapeOnTheMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\FindTheDistanceBetweenTwoFeatures.xaml.cs">
+      <DependentUpon>FindTheDistanceBetweenTwoFeatures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\FindUnionBetweenFeatures.xaml.cs">
+      <DependentUpon>FindUnionBetweenFeatures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\FindDifferenceBetweenTwoFeatures.xaml.cs">
+      <DependentUpon>FindDifferenceBetweenTwoFeatures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\FindShortestLineBetweenTwoFeatures.xaml.cs">
+      <DependentUpon>FindShortestLineBetweenTwoFeatures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\CreateABufferAroundAFeature.xaml.cs">
+      <DependentUpon>CreateABufferAroundAFeature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DetermineTheAreaOfAnAreaFeature.xaml.cs">
+      <DependentUpon>DetermineTheAreaOfAnAreaFeature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DetermineTheLengthOfALineFeature.xaml.cs">
+      <DependentUpon>DetermineTheLengthOfALineFeature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DetermineTheEnvelopeOfAFeature.xaml.cs">
+      <DependentUpon>DetermineTheEnvelopeOfAFeature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ConvertAFeatureToAndFromWkb.xaml.cs">
+      <DependentUpon>ConvertAFeatureToAndFromWkb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\FindAFeatureFromItsId.xaml.cs">
+      <DependentUpon>FindAFeatureFromItsId.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\UseMapSimplification.xaml.cs">
+      <DependentUpon>UseMapSimplification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ScaleUpAndDownAFeature.xaml.cs">
+      <DependentUpon>ScaleUpAndDownAFeature.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\AddPopups.xaml.cs">
+      <DependentUpon>AddPopups.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\DisplayASimpleMap.xaml.cs">
+      <DependentUpon>DisplayASimpleMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\FindTheFeatureAUserClickedOn.xaml.cs">
+      <DependentUpon>FindTheFeatureAUserClickedOn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\HideOrShowAFeatureLayer.xaml.cs">
+      <DependentUpon>HideOrShowAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\LoadAShapeFileFeatureLayer.xaml.cs">
+      <DependentUpon>LoadAShapeFileFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\PanAroundTheMap.xaml.cs">
+      <DependentUpon>PanAroundTheMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\PlotALatitudeAndLongitudePointOnTheMap.xaml.cs">
+      <DependentUpon>PlotALatitudeAndLongitudePointOnTheMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\TileDowloadProgress.xaml.cs">
+      <DependentUpon>TileDowloadProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\UsingTileCache.xaml.cs">
+      <DependentUpon>UsingTileCache.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Getting Started\ZoomInAndOutOfTheMap.xaml.cs">
+      <DependentUpon>ZoomInAndOutOfTheMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Labeling\DrawAndLabelANiceLookingRoad.xaml.cs">
+      <DependentUpon>DrawAndLabelANiceLookingRoad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Labeling\DrawAndLabelPointsOfInterests.xaml.cs">
+      <DependentUpon>DrawAndLabelPointsOfInterests.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Labeling\ChangeTheLabelPlacementForPoints.xaml.cs">
+      <DependentUpon>ChangeTheLabelPlacementForPoints.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Labeling\DrawAndLabelWaterFeatures.xaml.cs">
+      <DependentUpon>DrawAndLabelWaterFeatures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Labeling\DrawCurvedLabels.xaml.cs">
+      <DependentUpon>DrawCurvedLabels.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Labeling\ChangeTheLabelPosition.xaml.cs">
+      <DependentUpon>ChangeTheLabelPosition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MapTools\MouseCoordinate.xaml.cs">
+      <DependentUpon>MouseCoordinate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MapTools\ChangeDefaultLogo.xaml.cs">
+      <DependentUpon>ChangeDefaultLogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MapTools\PanZoomBar.xaml.cs">
+      <DependentUpon>PanZoomBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Markers\AddSimpleMarkers.xaml.cs">
+      <DependentUpon>AddSimpleMarkers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Markers\AddLabelOnMarkers.xaml.cs">
+      <DependentUpon>AddLabelOnMarkers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Markers\AddAnInMemoryMarkerOverlay.xaml.cs">
+      <DependentUpon>AddAnInMemoryMarkerOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Markers\AddAFeatureSourceMarkerOverlay.xaml.cs">
+      <DependentUpon>AddAFeatureSourceMarkerOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Markers\DragToCopyAMarker.xaml.cs">
+      <DependentUpon>DragToCopyAMarker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Markers\UseDraggableMarker.xaml.cs">
+      <DependentUpon>UseDraggableMarker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Move Around The Map\CreateARestrictionLayer.xaml.cs">
+      <DependentUpon>CreateARestrictionLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Move Around The Map\CreateAScaleLineAdornmentLayer.xaml.cs">
+      <DependentUpon>CreateAScaleLineAdornmentLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Move Around The Map\CreateAGraticuleAdornmentLayer.xaml.cs">
+      <DependentUpon>CreateAGraticuleAdornmentLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Move Around The Map\ZoomToAFeatureOrFeatures.xaml.cs">
+      <DependentUpon>ZoomToAFeatureOrFeatures.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Move Around The Map\ZoomToACertainZoomLevel.xaml.cs">
+      <DependentUpon>ZoomToACertainZoomLevel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Move Around The Map\ZoomToACertainScale.xaml.cs">
+      <DependentUpon>ZoomToACertainScale.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\UseRotationProjectionForAFeatureLayer.xaml.cs">
+      <DependentUpon>UseRotationProjectionForAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Projection\UseADifferentProjectionForAFeatureLayer.xaml.cs">
+      <DependentUpon>UseADifferentProjectionForAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Querying Feature Layers\FindFeaturesWithinDistance.xaml.cs">
+      <DependentUpon>FindFeaturesWithinDistance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Querying Feature Layers\FindFeaturesCountInAFeatureLayer.xaml.cs">
+      <DependentUpon>FindFeaturesCountInAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Querying Feature Layers\GetAllFeaturesFromAFeatureLayer.xaml.cs">
+      <DependentUpon>GetAllFeaturesFromAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Querying Feature Layers\GetAColumnDataInAFeatureLayer.xaml.cs">
+      <DependentUpon>GetAColumnDataInAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Querying Feature Layers\FindOutColumnDataInAFeatureLayer.xaml.cs">
+      <DependentUpon>FindOutColumnDataInAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Feature Layers\AddMyOwnCustomDataToAFeatureLayer.xaml.cs">
+      <DependentUpon>AddMyOwnCustomDataToAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Querying Feature Layers\SpatialQueryAFeatureLayer.xaml.cs">
+      <DependentUpon>SpatialQueryAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Querying Feature Layers\SqlQueryAFeatureLayer.xaml.cs">
+      <DependentUpon>SqlQueryAFeatureLayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SampleTemplate.xaml.cs">
+      <DependentUpon>SampleTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Satellite Image\DisplayASatelliteImage.xaml.cs">
+      <DependentUpon>DisplayASatelliteImage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Satellite Image\LoadAnEcwImage.xaml.cs">
+      <DependentUpon>LoadAnEcwImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Satellite Image\LoadAMrSidImage.xaml.cs">
+      <DependentUpon>LoadAMrSidImage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Satellite Image\LoadAWmsImage.xaml.cs">
+      <DependentUpon>LoadAWmsImage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen &amp; World Coordinates\DetermineWhereUserClickInWorldCoordinate.xaml.cs">
+      <DependentUpon>DetermineWhereUserClickInWorldCoordinate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InstructionPanel.cs" />
+    <Compile Include="Screen &amp; World Coordinates\ConvertScreenCoordinatesToWorldCoordinates.xaml.cs">
+      <DependentUpon>ConvertScreenCoordinatesToWorldCoordinates.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screen &amp; World Coordinates\ConvertWorldCoordinatesToScreenCoordinates.xaml.cs">
+      <DependentUpon>ConvertWorldCoordinatesToScreenCoordinates.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SampleData\Data\Austinstreets.dbf" />
+    <None Include="SampleData\Data\Austinstreets.ids" />
+    <None Include="SampleData\Data\Austinstreets.idx" />
+    <None Include="SampleData\Data\Austinstreets.shp" />
+    <None Include="SampleData\Data\Austinstreets.shx" />
+    <None Include="SampleData\Data\cities_e.dbf" />
+    <None Include="SampleData\Data\cities_e.ids" />
+    <None Include="SampleData\Data\cities_e.idx" />
+    <None Include="SampleData\Data\cities_e.shp" />
+    <None Include="SampleData\Data\cities_e.shx" />
+    <None Include="SampleData\Data\Countries02.dbf" />
+    <None Include="SampleData\Data\Countries02.ids" />
+    <None Include="SampleData\Data\Countries02.idx" />
+    <None Include="SampleData\Data\Countries02.shp" />
+    <None Include="SampleData\Data\Countries02.shx" />
+    <None Include="SampleData\Data\Countries02_2163.ids" />
+    <None Include="SampleData\Data\Countries02_2163.idx" />
+    <None Include="SampleData\Data\HoustonMuniBdySamp_Boundary.DAT" />
+    <None Include="SampleData\Data\HoustonMuniBdySamp_Boundary.ID" />
+    <None Include="SampleData\Data\HoustonMuniBdySamp_Boundary.IND" />
+    <None Include="SampleData\Data\HoustonMuniBdySamp_Boundary.MAP" />
+    <None Include="SampleData\Data\HoustonMuniBdySamp_Boundary.TAB" />
+    <None Include="SampleData\Data\MajorCities.dbf" />
+    <None Include="SampleData\Data\MajorCities.ids" />
+    <None Include="SampleData\Data\MajorCities.idx" />
+    <None Include="SampleData\Data\MajorCities.shp" />
+    <None Include="SampleData\Data\MajorCities.shx" />
+    <None Include="SampleData\Data\PhValues.grd" />
+    <None Include="SampleData\Data\sample_ph.dbf" />
+    <None Include="SampleData\Data\sample_ph.shp" />
+    <None Include="SampleData\Data\sample_ph.shx" />
+    <None Include="SampleData\Data\USStates.dbf" />
+    <None Include="SampleData\Data\USStates.ids" />
+    <None Include="SampleData\Data\USStates.idx" />
+    <None Include="SampleData\Data\USStates.shp" />
+    <None Include="SampleData\Data\USStates.shx" />
+    <None Include="SampleData\Data\UtahWater.dbf" />
+    <None Include="SampleData\Data\UtahWater.ids" />
+    <None Include="SampleData\Data\UtahWater.idx" />
+    <None Include="SampleData\Data\UtahWater.shp" />
+    <None Include="SampleData\Data\UtahWater.shx" />
+    <None Include="SampleData\Data\UtmUSStates.ids" />
+    <None Include="SampleData\Data\UtmUSStates.idx" />
+    <None Include="SampleData\Data\World.ecw" />
+    <None Include="SampleData\Data\World.eww" />
+    <None Include="SampleData\Data\World.sdw" />
+    <None Include="SampleData\Data\World.sid" />
+    <None Include="SampleData\Data\World.tfw" />
+    <None Include="SampleData\Data\WorldCapitals.dbf" />
+    <None Include="SampleData\Data\WorldCapitals.ids" />
+    <None Include="SampleData\Data\WorldCapitals.idx" />
+    <None Include="SampleData\Data\WorldCapitals.shp" />
+    <None Include="SampleData\Data\WorldCapitals.shx" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Circle.png" />
+    <Resource Include="Resources\Delete.png" />
+    <Resource Include="Resources\East.png" />
+    <Resource Include="Resources\Edit.gif" />
+    <Resource Include="Resources\Ellipse.png" />
+    <Resource Include="Resources\Line.png" />
+    <Resource Include="Resources\LinkButtonIconContactUs.png" />
+    <Resource Include="Resources\LinkButtonIconDiscussionForums.png" />
+    <Resource Include="Resources\LinkButtonIconFAQ.png" />
+    <Resource Include="Resources\LinkButtonIconOnlineStore.png" />
+    <Resource Include="Resources\LinkButtonIconProductInfo.png" />
+    <Resource Include="Resources\LinkButtonIconTestimonials.png" />
+    <Resource Include="Resources\MS.ico" />
+    <Resource Include="Resources\Normal.png" />
+    <Resource Include="Resources\North.png" />
+    <Resource Include="Resources\Point.png" />
+    <Resource Include="Resources\Polygon.png" />
+    <Resource Include="Resources\Rectangle.png" />
+    <Resource Include="Resources\South.png" />
+    <Resource Include="Resources\SpecialDataBaseResult.png" />
+    <Resource Include="Resources\Square.png" />
+    <Resource Include="Resources\TabButtonOff.png" />
+    <Resource Include="Resources\TabButtonOn.png" />
+    <Resource Include="Resources\ThinkGeoLogo.png" />
+    <Resource Include="Resources\West.png" />
+    <Resource Include="Resources\ZoomIn.png" />
+    <Resource Include="Resources\ZoomOut.png" />
+    <Resource Include="Resources\AQUA.png" />
+    <Resource Include="Resources\AQUABLANK.png" />
+    <Resource Include="bannerad_offline.png" />
+    <Resource Include="MS.ico" />
+    <Resource Include="Resources\MS50SampleAppsMastheadAdSpace.png" />
+    <Content Include="SampleData\Data\Austinstreets.mdb">
+    </Content>
+    <Resource Include="SampleData\Data\China.png" />
+    <Content Include="SampleData\Data\JORWD6gdb.mdb">
+    </Content>
+    <Resource Include="SampleData\Data\Semi Truck.png" />
+    <Content Include="SampleData\Data\Sheboygan_CityLimits.sdf">
+    </Content>
+    <Content Include="SyntaxHighlighter\shBrushCSharp.js" />
+    <Content Include="SyntaxHighlighter\shBrushXml.js" />
+    <Content Include="SyntaxHighlighter\shCore.js" />
+    <Content Include="SyntaxHighlighter\SyntaxHighlighter.css" />
+    <Resource Include="SampleData\Images\VirtualEarthResult.png" />
+    <Resource Include="SampleData\Images\SpecialDataBaseResult.png" />
+    <Resource Include="SampleList.xml" />
+    <Resource Include="SampleData\Images\MS3SampleAppsMastheadAdSpace.png" />
+    <Resource Include="SampleData\Data\Truck.gif" />
+    <Resource Include="SampleData\Data\United States.png" />
+    <Resource Include="SampleData\Data\Unknown.bmp" />
+    <Resource Include="SampleData\Data\World.tif" />
+    <Resource Include="SampleData\Images\downarrow.png" />
+    <Resource Include="SampleData\Images\East.gif" />
+    <Resource Include="SampleData\Images\EastArrow.gif" />
+    <Resource Include="SampleData\Images\iexplore.ico" />
+    <Resource Include="SampleData\Images\leftarrow.png" />
+    <Resource Include="SampleData\Images\ms.ico" />
+    <Resource Include="SampleData\Images\North.gif" />
+    <Resource Include="SampleData\Images\NorthArrow.gif" />
+    <Resource Include="SampleData\Images\NorthEastArrow.gif" />
+    <Resource Include="SampleData\Images\NorthWestArrow.gif" />
+    <Resource Include="SampleData\Images\Notepad.ico" />
+    <Resource Include="SampleData\Images\OnlineHelp.ico" />
+    <Resource Include="SampleData\Images\pan.png" />
+    <Resource Include="SampleData\Images\pdf.ico" />
+    <Resource Include="SampleData\Images\Prop Plane.png" />
+    <Resource Include="SampleData\Images\Semi Truck.png" />
+    <Resource Include="SampleData\Images\Solution.ico" />
+    <Resource Include="SampleData\Images\South.gif" />
+    <Resource Include="SampleData\Images\SouthArrow.gif" />
+    <Resource Include="SampleData\Images\SouthEastArrow.gif" />
+    <Resource Include="SampleData\Images\SouthWestArrow.gif" />
+    <Resource Include="SampleData\Images\thinkgeo_sampleapps_logo.gif" />
+    <Resource Include="SampleData\Images\Truck.gif" />
+    <Resource Include="SampleData\Images\uparrow.png" />
+    <Resource Include="SampleData\Images\West.gif" />
+    <Resource Include="SampleData\Images\WestArrow.gif" />
+    <Resource Include="SampleData\Images\zoomin.png" />
+    <Resource Include="SampleData\Images\zoomout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SyntaxHighlighter\SourceCode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MapSuiteCore\MapSuiteCore.Windows\MapSuiteCore.Windows\MapSuiteCore.Windows\MapSuiteCore.Windows.csproj">
+      <Project>{a211c541-29b9-423a-89ba-9b9438906bcb}</Project>
+      <Name>MapSuiteCore.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WpfDesktopEdition\WpfDesktopEdition.csproj">
+      <Project>{CD655E87-E8A3-4078-A37C-B5FF598B3E2F}</Project>
+      <Name>WpfDesktopEdition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

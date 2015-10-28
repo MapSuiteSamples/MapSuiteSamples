@@ -1,0 +1,25 @@
+<body oncontextmenu='return false;'><div class='divbody'><pre name='code' class='c-sharp:nocontrols'>using System.Windows;
+using System.Windows.Controls;
+using ThinkGeo.MapSuite.Core;
+using ThinkGeo.MapSuite.WpfDesktopEdition;
+
+namespace CSHowDoISamples
+{
+    public partial class DisplayASimpleMap : UserControl
+    {
+        public DisplayASimpleMap()
+        {
+            InitializeComponent();
+        }
+
+        private void WpfMap_Loaded(object sender, RoutedEventArgs e)
+        {
+            Map1.MapUnit = GeographyUnit.DecimalDegree;
+            Map1.CurrentExtent = new RectangleShape(-155.733, 95.60, 104.42, -81.9);
+            WorldMapKitWmsWpfOverlay worldOverlay = new WorldMapKitWmsWpfOverlay();
+            Map1.Overlays.Add("WMK", worldOverlay);
+            Map1.Refresh(); 
+        }
+    }
+}
+</pre></div><link type='text/css' rel='stylesheet' href='D:\Kevin-ThinkGeo\MapSuite\Development\WpfDesktopEdition\HowDoISamples\CSharp Samples\SyntaxHighlighter\SyntaxHighlighter.css'></link><script language='javascript' src='D:\Kevin-ThinkGeo\MapSuite\Development\WpfDesktopEdition\HowDoISamples\CSharp Samples\SyntaxHighlighter\shCore.js'></script><script language='javascript' src='D:\Kevin-ThinkGeo\MapSuite\Development\WpfDesktopEdition\HowDoISamples\CSharp Samples\SyntaxHighlighter\shBrushCSharp.js'></script><script language='javascript' src='D:\Kevin-ThinkGeo\MapSuite\Development\WpfDesktopEdition\HowDoISamples\CSharp Samples\SyntaxHighlighter\shBrushXml.js'></script><script language='javascript'>dp.SyntaxHighlighter.HighlightAll('code');</script></body>

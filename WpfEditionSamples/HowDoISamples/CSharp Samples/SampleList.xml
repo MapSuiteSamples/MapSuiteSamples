@@ -1,0 +1,346 @@
+<SampleList Name="Samples">
+  <Category Name="Getting Started">
+    <Sample Name="Display a simple map" Class="DisplayASimpleMap">
+      <Description>This sample shows how to display a simple map.</Description>
+    </Sample>
+    <Sample Name="Zoom in and out of the map" Class="ZoomInAndOutOfTheMap">
+      <Description>This sample shows how to zoom in and out map.</Description>
+    </Sample>
+    <Sample Name="Pan around the map" Class="PanAroundTheMap">
+      <Description>This sample pans around the map.</Description>
+    </Sample>
+    <Sample Name="Find the feature(s) a user clicked on" Class="FindTheFeatureAUserClickedOn">
+      <Description>This sample shows how to find and highlight a feature when a user clicked on.</Description>
+    </Sample>
+    <Sample Name="Hide or show a feature layer" Class="HideOrShowAFeatureLayer">
+      <Description>This sample shows how to show or hide a feature layer.</Description>
+    </Sample>
+    <Sample Name="Plot a point on the map" Class="PlotALatitudeAndLongitudePointOnTheMap">
+      <Description>This sample shows how to plot a point on the map.</Description>
+    </Sample>
+    <Sample Name="Using tile cache" Class="UsingTileCache">
+      <Description>This sample shows how to use tile cache.</Description>
+    </Sample>
+    <Sample Name="Load a shape file feature layer" Class="LoadAShapeFileFeatureLayer">
+      <Description>This sample shows how to load a ShapeFile feature layer.</Description>
+    </Sample>
+    <Sample Name="Add a popup overlay" Class="AddPopups">
+      <Description>This sample shows how to add popups on the map.</Description>
+    </Sample>
+    <Sample Name="Tile download progress" Class="TileDowloadProgress">
+      <Description>This sample shows how to track tiles download progress.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Extending MapSuite">
+    <Sample Name="Add additional custom properties and methods" Class="AddAdditionalCustomPropertiesAndMethods">
+      <Description>Choose the items to add additional custom properties And methods.</Description>
+    </Sample>
+    <Sample Name="Use Pdf extension" Class="UsePdfExtension">
+      <Description>Choose the following options to print to Pdf.</Description>
+    </Sample>
+    <Sample Name="Draw using ZedGraph style" Class="DrawUsingZedGraphStyle">
+      <Description>To use the ZedGraphStyle functions, you have to reference [Install-Path]\\Developer Reference\\Spatial Extensions\\ZedGraph Style Extension\\ZedGraphStyleExtension.dll.</Description>
+    </Sample>
+    <Sample Name="Draw using FleeBoolean style" Class="DrawUsingFleeBooleanStyle">
+      <Description>To use the FleeBooleanStyle functions, you have to reference [Install-Path]\\Developer Reference\\Spatial Extensions\\FleeStyle Extension\\FleeStyleExtension.dll and Ciloci.Flee.dll. And in this sample, the highlight features are the landlocked countries whose population is more than 10 million.</Description>
+    </Sample>
+    <Sample Name="Load a PostgreSqlFeatureLayer" Class="LoadAPostgreSqlFeatureLayer">
+      <Description>To use the PostgreSqlFeatureLayer functions, you have to reference [Install-Path]\\Developer Reference\\Spatial Extensions\\Postgre Extension\\PostgreExtension.dll.</Description>
+    </Sample>
+    <Sample Name="Use MicrosoftMapsLayer" Class="UseMicrosoftMapsLayer">
+      <Description>To use the BingMapsLayer functions, you have to reference [Install-Path]\Developer Reference\Spatial Extensions\MicrosoftMapLayer Extension\MicrosoftMapLayerExtension.dll.</Description>
+    </Sample>
+    <Sample Name="Load SdfFeatureLayer" Class="LoadSdfFeatureLayer">
+      <Description>To use the SdfFeatureLayer functions, you have to reference [Install-Path]\Developer Reference\Spatial Extensions\Fdo Extension\FdoExtension.dll, And copy MapSuiteFdoExtensionx86/MapSuiteFdoExtensionx64 folder from [Install-Path]\\Developer Reference\\System32 to System32\\Map Suite *.* folder for x86/x64 platform.</Description>
+    </Sample>
+    <Sample Name="Load GeoDatabaseFeatureLayer" Class="LoadGeoDatabaseFeatureLayer">
+      <Description>To use the PersonalGeoDatabaseFeatureLayer functions, you have to reference [Install-Path]\Developer Reference\Spatial Extensions\Fdo Extension\FdoExtension.dll, And get Fdo dependencies from [Install-Path]\\Developer Reference\\System32, put MapSuiteFdoExtensionx86 folder to System32 folder.</Description>
+    </Sample>
+    <Sample Name="Load TabFileFeatureLayer" Class="LoadTabFileFeatureLayer">
+      <Description>To use the TabFileFeatureLayer functions, you have to reference [Install-Path]\Developer Reference\Spatial Extensions\Fdo Extension\FdoExtension.dll, And copy MapSuiteFdoExtensionx86/MapSuiteFdoExtensionx64 folder from [Install-Path]\\Developer Reference\\System32 to System32\\Map Suite *.* folder for x86/x64 platform.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Labeling">
+    <Sample Name="Draw and label a nice looking road" Class="DrawAndLabelANiceLookingRoad">
+      <Description>This sample simply shows how to draw and label a nice looking road.</Description>
+    </Sample>
+    <Sample Name="Draw and label points of interests" Class="DrawAndLabelPointsOfInterests">
+      <Description>This sample simply shows how to draw and label points of interests.</Description>
+    </Sample>
+    <Sample Name="Change the label placement for points" Class="ChangeTheLabelPlacementForPoints">
+      <Description>This sample shows how to change the label placement for points.</Description>
+    </Sample>
+    <Sample Name="Draw and label water features" Class="DrawAndLabelWaterFeatures">
+      <Description>This sample simply shows how to draw and label water features.</Description>
+    </Sample>
+    <Sample Name="Draw curved labels" Class="DrawCurvedLabels">
+      <Description>This sample simply shows how to draw and do curved labels.</Description>
+    </Sample>
+    <Sample Name="Change the label position" Class="ChangeTheLabelPosition">
+      <Description>This sample simply shows how to change the label position.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Move Around The Map">
+    <Sample Name="Zoom in and out of the map" Class="ZoomInAndOutOfTheMap">
+      <Description>This sample shows how to zoom in and out map.</Description>
+    </Sample>
+    <Sample Name="Zoom to a certain scale" Class="ZoomToACertainScale">
+      <Description>This sample simply shows how to change the scale by selecting from the combox.</Description>
+    </Sample>
+    <Sample Name="Zoom to a certain zoom level" Class="ZoomToACertainZoomLevel">
+      <Description>This sample simply shows how to change the zoom level by selecting from the combox.</Description>
+    </Sample>
+    <Sample Name="Pan around the map" Class="PanAroundTheMap">
+      <Description>This sample shows how to pan around the map by the buttons.</Description>
+    </Sample>
+    <Sample Name="Zoom to a feature or set of features" Class="ZoomToAFeatureOrFeatures">
+      <Description>This sample simply shows how to zoom to a feature or set of features.</Description>
+    </Sample>
+    <Sample Name="Create a restriction layer" Class="CreateARestrictionLayer">
+      <Description>You can see only Africa because we have added a RestrictionLayer and its mode is ShowZones.</Description>
+    </Sample>
+    <Sample Name="Create a ScaleLine adornment layer" Class="CreateAScaleLineAdornmentLayer">
+      <Description>This sample simply create a scale line adornment layer and selete the combo box to change its position.</Description>
+    </Sample>
+    <Sample Name="Create a GraticuleAdornmentLayer" Class="CreateAGraticuleAdornmentLayer">
+      <Description>This sample simply adds a GraticuleAdornmentLayer.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Projection">
+    <Sample Name="Use a different projection for a feature layer" Class="UseADifferentProjectionForAFeatureLayer">
+      <Description>This sample simply shows how to use a different project to the map.</Description>
+    </Sample>
+    <Sample Name="Use rotation projection for a feature layer" Class="UseRotationProjectionForAFeatureLayer">
+      <Description>This sample simply shows how to use rotation project to the map.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Querying Feature Layers">
+    <Sample Name="Sql query a feature layer" Class="SqlQueryAFeatureLayer">
+      <Description>This sample simply shows how to query a feature layer with SQL statement.</Description>
+    </Sample>
+    <Sample Name="Spatial query a feature layer" Class="SpatialQueryAFeatureLayer">
+      <Description>Choose SpatialQuery Type:</Description>
+    </Sample>
+    <Sample Name="Find the Feature(s) a user clicked on" Class="FindTheFeatureAUserClickedOn">
+      <Description>This sample shows how to find the feature a user clicked on.</Description>
+    </Sample>
+    <Sample Name="Find features within distance" Class="FindFeaturesWithinDistance">
+      <Description>Select the distance (km):</Description>
+    </Sample>
+    <Sample Name="Find features count in a feature layer" Class="FindFeaturesCountInAFeatureLayer">
+      <Description>This sample simply shows how to get the count of features in a feature layer.</Description>
+    </Sample>
+    <Sample Name="Get all features from a FeatureLayer" Class="GetAllFeaturesFromAFeatureLayer">
+      <Description>This sample simply shows how to get all the features from a feature layer.</Description>
+    </Sample>
+    <Sample Name="Get a column data in a FeatureLayer" Class="GetAColumnDataInAFeatureLayer">
+      <Description>This sample simply shows how to get a column data in a feature layer.</Description>
+    </Sample>
+    <Sample Name="Find out column data in a FeatureLayer" Class="FindOutColumnDataInAFeatureLayer">
+      <Description>This sample simply shows how to find out column data in a feature layer by clicking on the map.</Description>
+    </Sample>
+    <Sample Name="Add my own custom data in a FeatureLayer" Class="AddMyOwnCustomDataToAFeatureLayer">
+      <Description>This sample shows how to use the custom data as label text in a Feature layer.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Screen &amp; World Coordinates">
+    <Sample Name="Determine where user click in world coordinate" Class="DetermineWhereUserClickInWorldCoordinate">
+      <Description>This sample shows how to find where a user click in world coordinate.</Description>
+    </Sample>
+    <Sample Name="Convert to world coordinates" Class="ConvertScreenCoordinatesToWorldCoordinates">
+      <Description>Tip: Click to pick the screen position.</Description>
+    </Sample>
+    <Sample Name="Convert to screen coordinates" Class="ConvertWorldCoordinatesToScreenCoordinates">
+      <Description>Tip: Click the button from convert world coordinates to screen coordinates.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Data Providers">
+    <Sample Name="Load an OracleFeatureLayer" Class="LoadAnOracleFeatureLayer">
+      <Description>This sample simply shows how to add a Oracle Feature Layer.</Description>
+    </Sample>
+    <Sample Name="Load A PostgreSqlFeatureLayer" Class="LoadAPostgreSqlFeatureLayer">
+      <Description>To use the PostgreSqlFeatureLayer functions, you have to reference [Install-Path]\\Developer Reference\\Spatial Extensions\\Postgre Extension\\PostgreExtension.dll.</Description>
+    </Sample>
+    <Sample Name="Create an InMemoryFeatureLayer" Class="CreateAnInMemoryFeatureLayer">
+      <Description>This sample simply adds an InMemoryFeatureLayer.</Description>
+    </Sample>
+    <Sample Name="Create a spatial index for a ShapeFileFeatureLayer" Class="CreateASpatialIndexForAShapeFileFeatureLayer">
+      <Description>This sample simply create a spatial index for a shapefile feature layer.</Description>
+    </Sample>
+    <Sample Name="Load a GridFeatureLayer" Class="LoadAGridFeatureLayer">
+      <Description>This sample simply adds a grid feature layer.</Description>
+    </Sample>
+    <Sample Name="Load a HeatLayer" Class="LoadAHeatLayer">
+      <Description>This sample simply adds a heat layer.</Description>
+    </Sample>
+    <Sample Name="Load a map from streams" Class="LoadAMapFromStreams">
+      <Description>This sample shows how to load a Map from a stream data.</Description>
+    </Sample>
+    <Sample Name="Use MicrosoftMapsLayer" Class="UseMicrosoftMapsLayer">
+      <Description>To use the BingMapsLayer functions, you have to reference [Install-Path]\Developer Reference\Spatial Extensions\MicrosoftMapLayer Extension\MicrosoftMapLayerExtension.dll.</Description>
+    </Sample>
+    <Sample Name="Load SdfFeatureLayer" Class="LoadSdfFeatureLayer">
+      <Description>To use the SdfFeatureLayer functions, you have to reference [Install-Path]\Developer Reference\Spatial Extensions\Fdo Extension\FdoExtension.dll, And get Fdo dependencies from [Install-Path]\\Developer Reference\\System32, put MapSuiteFdoExtensionx86 folder to System32 folder.</Description>
+    </Sample>
+    <Sample Name="Load GeoDatabaseFeatureLayer" Class="LoadGeoDatabaseFeatureLayer">
+      <Description>To use the PersonalGeoDatabaseFeatureLayer functions, you have to reference [Install-Path]\Developer Reference\Spatial Extensions\Fdo Extension\FdoExtension.dll, And get Fdo dependencies from [Install-Path]\\Developer Reference\\System32, put MapSuiteFdoExtensionx86 folder to System32 folder.</Description>
+    </Sample>
+    <Sample Name="Load TabFileFeatureLayer" Class="LoadTabFileFeatureLayer">
+      <Description>To use the TabFileFeatureLayer functions, you have to reference [Install-Path]\Developer Reference\Spatial Extensions\Fdo Extension\FdoExtension.dll, And get Fdo dependencies from [Install-Path]\\Developer Reference\\System32, put MapSuiteFdoExtensionx86 folder to System32 folder.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Dynamic Shapes">
+    <Sample Name="Efficiently move a plane image" Class="EfficientlyMoveAPlaneImage">
+      <Description>This sample shows how to efficiently move a plane image on the map.</Description>
+    </Sample>
+    <Sample Name="Show temporary shape on the map" Class="ShowTemporaryShapeOnTheMap">
+      <Description>This sample shows temporary shape on the map.</Description>
+    </Sample>
+    <Sample Name="Move a feature" Class="MoveAFeature">
+      <Description>This sample shows how to move a feature on the map.</Description>
+    </Sample>
+    <Sample Name="Plot a point on the map" Class="PlotALatitudeAndLongitudePointOnTheMap">
+      <Description>This sample shows how to plot a point on the map.</Description>
+    </Sample>
+    <Sample Name="Hightlight a feature on the map" Class="HighlightAFeatureOnTheMap">
+      <Description>This sample shows how to highlight a feature on the map.</Description>
+    </Sample>
+    <Sample Name="Refresh points randomly" Class="RefreshPointsRandomly">
+      <Description>Add Points into map and choose the interval to refresh the Points' position and color.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Features">
+    <Sample Name="Zoom to a feature or features" Class="ZoomToAFeatureOrFeatures">
+      <Description>This sample simply shows how to zoom to a feature or set of features.</Description>
+    </Sample>
+    <Sample Name="Move a feature" Class="MoveAFeature">
+      <Description>This sample simply moves a feature.</Description>
+    </Sample>
+    <Sample Name="Scale up and down a feature" Class="ScaleUpAndDownAFeature">
+      <Description>This sample simply scale a feature up and down.</Description>
+    </Sample>
+    <Sample Name="Find the distance between two features" Class="FindTheDistanceBetweenTwoFeatures">
+      <Description>This sample shows how to find the distance between two features.</Description>
+    </Sample>
+    <Sample Name="Find union between features" Class="FindUnionBetweenFeatures">
+      <Description>This sample shows how to find union between features.</Description>
+    </Sample>
+    <Sample Name="Find difference between two features" Class="FindDifferenceBetweenTwoFeatures">
+      <Description>This sample shows how to find difference between two features.</Description>
+    </Sample>
+    <Sample Name="Find shortest line between two features" Class="FindShortestLineBetweenTwoFeatures">
+      <Description>This sample gets shortest line between two features.</Description>
+    </Sample>
+    <Sample Name="Create a buffer around a feature" Class="CreateABufferAroundAFeature">
+      <Description>This sample creates a buffer around a feature.</Description>
+    </Sample>
+    <Sample Name="Determine the area of an area feature" Class="DetermineTheAreaOfAnAreaFeature">
+      <Description>This sample simply shows getting the area of a feature by clicking on map and select a country.</Description>
+    </Sample>
+    <Sample Name="Determine the length of a line feature" Class="DetermineTheLengthOfALineFeature">
+      <Description>This sample simply shows clicking on map and select a nearest road.</Description>
+    </Sample>
+    <Sample Name="Determine the envelope of a feature" Class="DetermineTheEnvelopeOfAFeature">
+      <Description>This sample simply determines the envelope of a feature.</Description>
+    </Sample>
+    <Sample Name="Convert a feature to&amp;from Wkb" Class="ConvertAFeatureToAndFromWkb">
+      <Description>This sample simply converts a feature to and from Wkb.</Description>
+    </Sample>
+    <Sample Name="Find a feature from its id" Class="FindAFeatureFromItsId">
+      <Description>This sample finds a feature from its id.</Description>
+    </Sample>
+    <Sample Name="Use map simplification" Class="UseMapSimplification">
+      <Description>This sample shows how to use map simplification.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Satellite Image">
+    <Sample Name="Display a satellite image" Class="DisplayASatelliteImage">
+      <Description>This sample shows how to display a satellite image.</Description>
+    </Sample>
+    <Sample Name="Load an ECW image" Class="LoadAnEcwImage">
+      <Description>This sample shows how to display an ECW image.</Description>
+    </Sample>
+    <Sample Name="Load a MrSid image" Class="LoadAMrSidImage">
+      <Description>This sample shows how to load a MrSid image.</Description>
+    </Sample>
+    <Sample Name="Load a Wms image" Class="LoadAWmsImage">
+      <Description>This sample shows how to load a Wms image.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Feature Layers">
+    <Sample Name="Display feature layer at certain scale" Class="DisplayFeatureLayerAtCertainScale">
+      <Description>This sample shows how to display a feature layer at certain scale.</Description>
+    </Sample>
+    <Sample Name="Change the look of a feature layer" Class="ChangeTheLookOfAFeatureLayer">
+      <Description>This sample shows how to change the style of a feature layer.</Description>
+    </Sample>
+    <Sample Name="Hide or show a feature layer" Class="HideOrShowAFeatureLayer">
+      <Description>This sample simply hides or shows a feature layer.</Description>
+    </Sample>
+    <Sample Name="Use a different projection" Class="UseADifferentProjectionForAFeatureLayer">
+      <Description>This sample simply shows how to use a different project to the map.</Description>
+    </Sample>
+    <Sample Name="Add my own custom data in a FeatureLayer" Class="AddMyOwnCustomDataToAFeatureLayer">
+      <Description>This sample shows how to use the custom data as label text in a Feature layer.</Description>
+    </Sample>
+    <Sample Name="Stop certain features from drawing" Class="StopCertainFeaturesFromDrawing">
+      <Description>This sample simply shows how to skip drawing the countries with a  population of less than 10 millions people.</Description>
+    </Sample>
+    <Sample Name="Hightlight a feature on the map" Class="HighlightAFeatureOnTheMap">
+      <Description>Hightlight A Feature On The Map</Description>
+    </Sample>
+  </Category>
+  <Category Name="Editing Feature Layers">
+    <Sample Name="Add features from a feature layer" Class="AddFeaturesFromAFeatureLayer">
+      <Description>This sample shows how to add features from a feature layer.</Description>
+    </Sample>
+    <Sample Name="Delete features from a feature layer" Class="DeleteFeaturesFromAFeatureLayer">
+      <Description>This sample shows how to delete features from a feature layer.</Description>
+    </Sample>
+    <Sample Name="Edit features from a feature layer" Class="EditFeaturesFromAFeatureLayer">
+      <Description>This sample shows how to edit features from a feature layer.</Description>
+    </Sample>
+    <Sample Name="Track and edit shapes" Class="TrackAndEditShapes">
+      <Description>This sample shows how to track and edit shapes.</Description>
+    </Sample>
+  </Category>
+  <Category Name="Markers">
+    <Sample Name="Add simple markers on the map" Class="AddSimpleMarkers">
+      <Description>This sample shows how to add markers by click event on the map.</Description>
+    </Sample>
+    <Sample Name="Add label on markers" Class="AddLabelOnMarkers">
+      <Description>This sample shows how to add label on markers. Click on the map to add a marker where is clicked.</Description>
+    </Sample>
+    <Sample Name="Add an InMemoryMarkerOverlay" Class="AddAnInMemoryMarkerOverlay">
+      <Description>This sample shows how to add an InMemoryMarkerOverlay and set its styles. Mouse hover to show its tooltip.</Description>
+    </Sample>
+    <Sample Name="Add a FeatureSource marker overlay" Class="AddAFeatureSourceMarkerOverlay">
+      <Description>This sample shows how to add an FeatureSourceMarkerOverlay and set its styles. Mouse hover to show its tooltip.</Description>
+    </Sample>
+    <Sample Name="Use draggable marker" Class="UseDraggableMarker">
+      <Description>This sample shows how to drag a marker around.</Description>
+    </Sample>
+    <Sample Name="Drag to copy a marker" Class="DragToCopyAMarker">
+      <Description>
+        This sample shows how to drag to copy a new marker and drag around.
+
+        Tips: Shift + Drag to copy a marker on the map.
+      </Description>
+    </Sample>
+  </Category>
+  <Category Name="MapTools">
+    <Sample Name="Add a mouse coordinate" Class="MouseCoordinate">
+      <Description>This sample shows how to add a mouse coordinate map tool on the bottom right.</Description>
+    </Sample>
+    <Sample Name="Change default logo" Class="ChangeDefaultLogo">
+      <Description>This sample shows how to change the default logo map tool.</Description>
+    </Sample>
+    <Sample Name="Add a pan zoom bar" Class="PanZoomBar">
+      <Description>
+        This sample shows how to add a pan zoom bar on the map.
+
+        Tips: A level number displays next to the drag handler on the bar during dragging when tracking level is enabled.
+      </Description>
+    </Sample>
+  </Category>
+</SampleList>

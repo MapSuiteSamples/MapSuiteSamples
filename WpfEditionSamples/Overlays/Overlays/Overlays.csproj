@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05306452-7B45-41A6-B386-76649FDF5012}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThinkGeo.MapSuite.Overlays</RootNamespace>
+    <AssemblyName>WpfOverlaySample</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mapsuite.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Shared\MapSuiteSampleHelper.cs" />
+    <Compile Include="View\BingMapsApplicationIdPromptWindow.xaml.cs">
+      <DependentUpon>BingMapsApplicationIdPromptWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PopupUserControl.xaml.cs">
+      <DependentUpon>PopupUserControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MapTools\OverlaySwitcher.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\BingMapsApplicationIdPromptWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PopupUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MapTools\OverlayChangedOverlaySwitcherEventArgs.cs" />
+    <Compile Include="MapTools\OverlaySwitcher.cs" />
+    <Compile Include="OverlayBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="App_Data\CityLimitPolygon.dbf" />
+    <None Include="App_Data\CityLimitPolygon.ids" />
+    <None Include="App_Data\CityLimitPolygon.idx" />
+    <None Include="App_Data\CityLimitPolygon.shp" />
+    <None Include="App_Data\CityLimitPolygon.shx" />
+    <None Include="App_Data\POIs\Hotels.dbf" />
+    <None Include="App_Data\POIs\Hotels.ids" />
+    <None Include="App_Data\POIs\Hotels.idx" />
+    <None Include="App_Data\POIs\Hotels.prj" />
+    <None Include="App_Data\POIs\Hotels.shp" />
+    <None Include="App_Data\POIs\Hotels.shx" />
+    <None Include="App_Data\POIs\Medical_Facilities.dbf" />
+    <None Include="App_Data\POIs\Medical_Facilities.ids" />
+    <None Include="App_Data\POIs\Medical_Facilities.idx" />
+    <None Include="App_Data\POIs\Medical_Facilities.prj" />
+    <None Include="App_Data\POIs\Medical_Facilities.shp" />
+    <None Include="App_Data\POIs\Medical_Facilities.shx" />
+    <None Include="App_Data\POIs\Schools.dbf" />
+    <None Include="App_Data\POIs\Schools.ids" />
+    <None Include="App_Data\POIs\Schools.idx" />
+    <None Include="App_Data\POIs\Schools.prj" />
+    <None Include="App_Data\POIs\Schools.shp" />
+    <None Include="App_Data\POIs\Schools.shx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mapsuite.ico" />
+    <Resource Include="Images\switcher_maxmize.png" />
+    <Resource Include="Images\switcher_minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\medical_facility.png" />
+    <Resource Include="Images\hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\school.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\drawpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="mapsuite.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\MapSuiteCore\MapSuiteCore.Windows\MapSuiteCore.Windows\MapSuiteCore.Windows\MapSuiteCore.Windows.csproj">
+      <Project>{a211c541-29b9-423a-89ba-9b9438906bcb}</Project>
+      <Name>MapSuiteCore.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\WpfDesktopEdition\WpfDesktopEdition.csproj">
+      <Project>{cd655e87-e8a3-4078-a37c-b5ff598b3e2f}</Project>
+      <Name>WpfDesktopEdition</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
