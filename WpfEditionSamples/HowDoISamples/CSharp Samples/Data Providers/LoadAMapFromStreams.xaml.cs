@@ -38,6 +38,8 @@ namespace CSHowDoISamples
         private void LoadAMapFromStreams_StreamLoading(object sender, StreamLoadingEventArgs e)
         {
             string fileName = System.IO.Path.GetFileName(e.AlternateStreamName);
+            //TODO: Portable Change.
+            //e.AlternateStream = new FileStream(@"..\..\SampleData\Data\" + fileName, e.FileMode, e.FileAccess);
             e.AlternateStream = new FileStream(@"..\..\SampleData\Data\" + fileName, (FileMode)e.FileMode, (FileAccess)e.FileAccess);
         }
     }

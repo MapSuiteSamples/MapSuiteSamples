@@ -39,9 +39,7 @@ namespace CSHowDoISamples
             ShapeFileFeatureLayer statesLayer = (ShapeFileFeatureLayer)wpfMap1.FindFeatureLayer("StatesLayer");
 
             statesLayer.Open();
-            //TODO: Portable Change.
-            //DataTable dataTable = statesLayer.QueryTools.ExecuteQuery(tbxSQL.Text);
-            DataTable dataTable = (DataTable)statesLayer.QueryTools.ExecuteQuery(tbxSQL.Text);
+            DataTable dataTable = statesLayer.QueryTools.ExecuteQuery(tbxSQL.Text);
             statesLayer.Close();
 
             dgridResult.DataContext = dataTable;
